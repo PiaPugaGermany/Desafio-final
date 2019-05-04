@@ -5,9 +5,12 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <meta name="author" content="Pía Puga Germany">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:200,400,700|Pacifico" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -19,40 +22,41 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <!-- Navbar fixed-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Pp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#sobre-mi">Acerca de mi<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#experiencia">Experiencia</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#trabajos">Trabajos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <section>
-
-    <!-- Foto de fondo -->
-    <header>
-      <img class="img-fluid" src="assets/img/foto-personal.jpg" alt="Foto Presentación">
-      <h1>¡Hola! Soy Pía Puga Germany</h1>
+    <!-- 1.Foto de fondo -->
+    <header class="container-fluid align-bottom">
+      <h1>¡Hola!</h1>
+      <p>Soy Pía Puga Germany</p>
+      <a href="#contacto" class="btn btn-outline-light" data-toggle="tooltip" data-placement="bottom" title="Click para más información">Contacto</a>
     </header>
 
-    <!-- About me -->
-    <section class="container">
-      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+    <!-- 2.About me -->
+    <section id="sobre-mi" class="container d-none d-md-block p-5 mt-5">
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h2>
       <hr>
       <div class="row">
         <div class="col md-6">
@@ -66,81 +70,93 @@
       </div>
     </section>
 
-    <!-- Experiencia laboral -->
-    <section class="container">
-      <h2>Mi experiencia</h2>
-      <div class="row">
-        <div class="col lg-4">
+    <!-- 3.Experiencia laboral -->
+    <section id="experiencia" class="container p-5 mt-5">
+      <h2>MI EXPERIENCIA</h2>
+      <div class="row py-5">
+        <div class="col-12 col-md-4 p-5">
           <i class="fas fa-users fa-6x"></i>
-          <h3>Social Media Analyst - Bread</h3>
-          <h4>2017</h4>
+          <h4>Social Media Analyst - Bread</h4>
+          <p>2017</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary bbtn btn-warning" data-toggle="modal" data-target="#bread">Ver más</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="bread" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Social Media Analyst - Bread</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col lg-4">
+        <div class="col-12 col-md-4 p-5">
           <i class="fas fa-globe-americas fa-6x"></i>
-          <h3>Coordinadora de Marketing Digital - Marca Chile</h3>
-          <h4>2018</h4>
+          <h4>Coordinadora de Marketing Digital - Marca Chile</h4>
+          <p>2018</p>
+          <!-- Button trigger modal -->
+
+          <button type="button" class="btn btn-primary bbtn btn-warning" data-toggle="modal" data-target="#marca-chile"><a href="#marca-chile">Ver más</a> </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="marca-chile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Coordinadora de Marketing Digital - Marca Chile</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col lg-4">
+        <div class="col-12 col-md-4 p-5">
           <i class="fas fa-bullhorn fa-6x"></i>
-          <h3>Analista de Marketing Digital - Entel</h3>
-          <h4>2019</h4>
-        </div>
-      </div>
-    </section>
+          <h4>Analista de Marketing Digital - Entel</h4>
+          <p>2019</p>
+          <!-- Button trigger modal -->
 
-    <!-- últimos trabajos -->
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2>Mis últimos trabajos</h2>
-          <hr>
-          <div class="card-group">
-            <div class="card">
-              <img src="assets/img/meet_coffee.png" class="card-img-top" alt="meet-coffe">
-              <div class="card-body">
-                <h5 class="card-title">Meet&Coffe</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="assets/img/iguana_page.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Iguana Page</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="assets/img/suricata.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Suricata</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="card-group">
-            <div class="card">
-              <img src="assets/img/cuppon.png" class="card-img-top" alt="meet-coffe">
-              <div class="card-body">
-                <h5 class="card-title">Cuppon</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="assets/img/ricomida.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Ricomida</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="assets/img/dmark.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">DMark</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <button type="button" class="btn btn-primary bbtn btn-warning" data-toggle="modal" data-target="#exampleModal"><a href="#entel">Ver más</a> </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="entel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Analista de Marketing Digital - Entel</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
               </div>
             </div>
           </div>
@@ -148,50 +164,108 @@
       </div>
     </section>
 
-    <!-- Contacto -->
-    <h2>Contacto</h2>
-    <hr>
-    <div class="typeform-widget" data-url="https://piapugagermany.typeform.com/to/ipS55I" style="width: 100%; height: 500px;"></div>
-    <script>
-      (function() {
-        var qs, js, q, s, d = document,
-          gi = d.getElementById,
-          ce = d.createElement,
-          gt = d.getElementsByTagName,
-          id = "typef_orm",
-          b = "https://embed.typeform.com/";
-        if (!gi.call(d, id)) {
-          js = ce.call(d, "script");
-          js.id = id;
-          js.src = b + "embed.js";
-          q = gt.call(d, "script")[0];
-          q.parentNode.insertBefore(js, q)
-        }
-      })()
-    </script>
-    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a
-        href="https://admin.typeform.com/signup?utm_campaign=ipS55I&utm_source=typeform.com-13881062-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
-  </section>
-  <footer class="container-fluid">
-    <h2>Pía Puga Germany</h2>
-    <i class="fab fa-github-square fa-3x"></i>
-    <i class="fab fa-linkedin fa-3x"></i>
-    <i class="fab fa-twitter-square fa-3x"></i>
-    <i class="fab fa-facebook-square fa-3x"></i>
-  </footer>
+    <!-- 4.Últimos trabajos -->
+    <section id="trabajos" class="container-fluid trabajos p-5">
+      <h2 class="text-white">MIS ÚLTIMOS TRABAJOS</h2>
+      <hr>
+      <div class="card-deck">
+        <div class="card">
+          <img src="assets/img/meet_coffee.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Meet&Coffee</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/iguana_page.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Iguana Page</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/suricata.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Suricata</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck pt-5">
+        <div class="card">
+          <img src="assets/img/cuppon.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cuppon</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/ricomida.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ricomida</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/dmark.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DMark</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
 
+    </section>
+    <!-- 5.Contacto -->
+    <section id="contacto" class="container p-5">
+      <h2>CONTACTO</h2>
+      <hr>
+      <div class="typeform-widget" data-url="https://piapugagermany.typeform.com/to/ipS55I" style="width: 100%; height: 500px;"></div>
+      <script>
+        (function() {
+          var qs, js, q, s, d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm",
+            b = "https://embed.typeform.com/";
+          if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q)
+          }
+        })()
+      </script>
+      <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a
+          href="https://admin.typeform.com/signup?utm_campaign=ipS55I&utm_source=typeform.com-13881062-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
 
+    </section>
 
+    <!-- 6.Footer -->
+    <footer class="container-fluid text-white p-3">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h3>Pía Puga Germany</h3>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="https://github.com/PiaPugaGermany" target="_blank"><i class="rrss fab fa-github-square fa-3x px-1"></i></a>
+          <a href="https://www.linkedin.com/in/piapugagermany/" target="_blank"><i class="rrss fab fa-linkedin fa-3x px-1"></i></a>
+          <a href="https://twitter.com/PiaPugaGermany" target="_blank"><i class="rrss fab fa-twitter-square fa-3x px-1"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="rrss fab fa-facebook-square fa-3x px-1"></i></a>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Mi script -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

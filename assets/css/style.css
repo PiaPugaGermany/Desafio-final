@@ -1,3 +1,81 @@
-footer {
-  background-color: #CB732B;
+header {
+background-image: url('../img/foto-personal.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding-bottom: 20rem;
+padding-top: 20rem;
+margin-top: 3.5rem;
+font-family: Oswald;
+font-weight: 300;
+color: #fff;
+vertical-align: bottom;
 }
+
+.navbar-brand {
+  font-family: Pacifico;
+}
+
+.navbar {
+  background-color: #FCD538;
+  color: #fff;
+}
+
+.navbar {
+  font-family: Oswald;
+  color: #fff;
+}
+
+#experiencia {
+  text-align: center;
+}
+
+h1 {
+  font-family: Pacifico;
+    color: #F3775F;
+}
+
+h2 {
+  font-family: Oswald;
+  font-weight:400;
+  color: #F3775F;
+  text-align: center;
+}
+
+
+h5 {
+  color: #C9A7A5;
+}
+
+.trabajos {
+  background-color: #FCD538;
+}
+
+i {
+  color: #FCD538;
+}
+
+hr {
+width: 10rem;
+margin-top: 1rem;
+border-top: 1px solid #C9A7A5;
+
+
+}
+footer {
+  background-color: #FCD538;
+  font-family: Pacifico;
+  color: #fff;
+  text-align: center;
+}
+
+.rrss {
+  color: #fff;
+}
+
+/* Colores
+#FCD538
+#F0347E
+#F3775F
+#C9A7A5
+#AE95CE */
